@@ -1,14 +1,16 @@
 import "./App.css";
-import RevenueCard from "./components/RevenueCard.jsx";
+import Sidebar from "./components/Sidebar.jsx";
+import NavBar from "./components/NavBar.jsx";
+import Body from "./components/Body.jsx";
 
 function App() {
   return (
-    <div className="grid grid-cols-4">
-      <RevenueCard
-        title={"Amount Pending"}
-        orderCount={13}
-        amount={"92,312.20"}
-      />
+    <div className="bg-background flex relative ">
+      <Sidebar />
+      <div className="w-full">
+        <NavBar />
+        <Body />
+      </div>
     </div>
   );
 }
